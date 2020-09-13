@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fee9f0;
+    display: flex;
+    justify-content: center;
+}
+.myTasks{
+    width: 400px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 0px 15px 9px rgba(20, 23, 28, 0.1);
+    background-color: #f4f8f9;
+}
+.myTasks__img img{
+    width: 100%;
+    display: block;
+}
+.Enter_Activity{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.Enter_Activity #btnAddActivity{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #de517a;
+    background-color: white;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+}
+.Enter_Activity #btnAddActivity i{
+    color: #de517a;
+    font-weight: bold;
+    font-size: 15px;
+}
+.Enter_Activity #Activity{
+    outline: none;
+    padding: 7px 13px;
+    width: 95%;
+    background-color: #e7859e;
+    border: none;
+    color:white;
+}
+.Enter_Activity #Activity::placeholder{
+    color:white;
+}
+.Enter_Activity #btnAddActivity:focus{
+    outline: none;
+}
+.line-through{
+    margin: 20px 0;
+}
+#tblTaskDoing button{
+    border: none;
+    background: transparent;
+}
+#tblTaskDone button{
+    border: none;
+    background: transparent;
+}
+#tblTaskDoing button:focus{
+    outline: none;
+}
+#tblTaskDone button:focus{
+    outline: none;
+}
+.space{
+    height: 8px;
+}
+#tblTaskDone .fa-check-circle{
+    color: green;
+}
